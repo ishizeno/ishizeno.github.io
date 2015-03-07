@@ -129,7 +129,7 @@
                             <i class="fa fa-plug"></i>
                             <h3>Modular</h3>
                             <p>
-                                Build analog submodules as Arduino shields.<br>
+                                Build analog submodules on single boards.<br>
                                 Patch them with standard Eurorack modules.<br>
                                 8-channel polyphony in 42-HP.
                             </p>
@@ -229,7 +229,7 @@
                                     <h4>8 Polyphonic Channels</h4>
                                     <p>
                                         Each made of 6 analog ports and 6 digital potentiometers.<br>
-                                        Each powered by its very own Arduino microcontroller.
+                                        Each powered by its own printed circuit board.
                                     </p>
                                 </div>
                             </div>
@@ -267,7 +267,7 @@
                                 <div class="service-info">
                                     <h4>8 Submodule Bays</h4>
                                     <p>
-                                        Embed up to 8 submodules packaged as Arduino shields.<br>
+                                        Embed up to 8 submodules for any synthesis function.<br>
                                         Oscillators, filters, sequencers, or whatever you fancy.
                                     </p>
                                 </div>
@@ -412,7 +412,7 @@
                     <div class="col-md-8 col-md-offset-2 margin-btm-30">
                         <div class="text-left">
                             <p>
-                                Out of the box, the module does not provide any synthesis capabilities. Instead, these are added through optional Arduino shields, with up to 8 shields (one per channel). Programming of the module can be done through the Arduino of any channel, or through the Linux operating system of the module's Raspberry Pi. For example, the Pi could be used as software sequencer. The analog crosspoint switches can also be reconfigured dynamically in order to support low-frequency patching.
+                                Out of the box, the module does not provide any synthesis capabilities. Instead, these are added through optional submodules, with up to 8 modules (one per channel). Programming of the module is done through the Linux operating system of the module's Raspberry Pi. For example, the Pi could be used as software sequencer. The analog crosspoint switches can also be reconfigured dynamically in order to support low-frequency patching.
                             </p>
                         </div>
                     </div>
@@ -432,8 +432,6 @@
                                         <li>6 analog ports (A0, A1, A2, A3, A4, A5)</li>
                                         <li>6 knobs</li>
                                         <li>6 digital potentiometers</li>
-                                        <li>1 Arduino Uno</li>
-                                        <li>1 Arduino shield (optional)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -528,7 +526,7 @@
                                 <div class="work-detail">
                                     <h2>48-channel Oscilloscope</h2>
                                     <p>
-                                        The 6 analog ports of every polyphonic channel are directly connected to the six analog inputs of the channel's Arduino, which provides 10-bit analog-to-digital converters. This allows the web user interface to be used as a low-resolution 48-channel oscilloscope for signal visualization.
+                                        The 6 analog ports of every polyphonic channel are directly connected to an embedded analog-to-digital converter, which provides 10-bit analog-to-digital converters. This allows the web user interface to be used as a low-resolution 48-channel oscilloscope for signal visualization.
                                     </p>
                                 </div>
                             </div>
@@ -549,16 +547,6 @@
                                     <h2>Knob Patching</h2>
                                     <p>
                                         All 48 knob settings are converted into analog voltage levels through 12 built-in AD5254 quad digital potentiometers (3 per pair of channels). From there, the voltage level of a channel's knob can be patched to any analog port of the channel, or any of the 16 or 32 analog endpoints available.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="work-detail">
-                                    <h2>Arduino</h2>
-                                    <p>
-                                        Every polyphonic channel is controlled by a dedicated Arduino. The channel's analog ports are statically patched to the Arduino's analog inputs. As a result, any standard Arduino shield can be stacked on top of any channel shield, or can be used as channel shield. The Arduinos are directly built into the module's backplane using the <a href="http://www.atmel.com/devices/atmega328p.aspx" target="external">Atmel ATMEGA328P</a> microcontroller and the <a href="http://www.ftdichip.com/Products/ICs/FT232R.htm" target="external">FTDI FT232RL</a> USB interface.
                                     </p>
                                 </div>
                             </div>
@@ -615,11 +603,11 @@
                             </p>
                             <ul>
                                 <li>Web user interface implemented using <a href="http://nodejs.org/" target="external">Node.js</a> and <a href="http://famo.us/" target="external">famo.us</a></li>
-                                <li>Mixed signal middleware implemented using <a href="http://arduino.cc/en/main/software" target="external">Arduino</a></li>
+                                <li>Mixed signal middleware implemented using C++ libraries</li>
                                 <li>Online services implemented using the <a href="https://cloud.google.com/" target="external">Google Cloud Platform</a></li>
                             </ul>
                             <p>
-                                Since the Raspberry Pi runs a web server and is used as central nervous system for the module, developing an application for the ISHIZENO i8 is like developing a web application. The user interface is implemented in HTML, JavaScript, and CSS, while integration with the built-in Arduinos and with external controllers connected to the Pi through USB is done with simple web services. This should broaden the community of developers who can create new applications for modular synthesizers.
+                                Since the Raspberry Pi runs a web server and is used as central nervous system for the module, developing an application for the ISHIZENO i8 is like developing a web application. The user interface is implemented in HTML, JavaScript, and CSS, while integration with external controllers connected to the Pi through USB is done with simple web services. This should broaden the community of developers who can create new applications for modular synthesizers.
                             </p>
                         </div>
                     </div>
@@ -726,7 +714,7 @@
                         <p class="lead margin-btm-30">
                             <ul class="lead">
                                 <li>Providing a mixed interface (analog × digital) for processing mixed signals</li>
-                                <li>Making it easier to develop custom modules as Arduino shields</li>
+                                <li>Making it easier to develop custom modules as single circuit printed boards</li>
                                 <li>Enhancing the interface of a modular synthesizer with full signal visualization</li>
                                 <li>Simplifying the development of rich user interfaces running on any device</li>
                                 <li>Experimenting with Low-Frequency Patching (think LFO, but for patching)</li>

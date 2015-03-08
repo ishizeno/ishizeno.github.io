@@ -536,27 +536,7 @@
                                 <div class="work-detail">
                                     <h2>Digital Potentiometers</h2>
                                     <p>
-                                        6 physical knobs are assigned to every polyphonic channel. These knobs use rotary encoders with 24 detents and 24 PPR resolution. They also provide SPST momentary switching and RGB led illumination. Knob settings are passed to a channel through its I²C bus. Settings can be used from a channel's shield using a digital potentiometer like the <a href="http://www.analog.com/en/digital-to-analog-converters/digital-potentiometers/ad5254/products/product.html" target="external">AD5254</a>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="work-detail">
-                                    <h2>Knob Patching</h2>
-                                    <p>
-                                        All 48 knob settings are converted into analog voltage levels through 12 built-in AD5254 quad digital potentiometers (3 per pair of channels). From there, the voltage level of a channel's knob can be patched to any analog port of the channel, or any of the 16 or 32 analog endpoints available.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="work-detail">
-                                    <h2>Multi-Channel Shields</h2>
-                                    <p>
-                                        By default, a shield is attached to a single channel. Yet some applications might require more than 6 analog ports, more than 6 potentiometers, or more PCB space. For such applications, a multi-channel shield can be used, spanning any number of channels.
+                                        The 16 physical knobs can be dynamically assigned to any polyphonic channel. These knobs use rotary encoders with 24 detents and 24 PPR resolution. They also provide SPST momentary switching and RGB led illumination. Knob settings are passed to a channel by the Raspberry Pi 2 through its SPI bus.
                                     </p>
                                 </div>
                             </div>

@@ -131,7 +131,7 @@
                             <p>
                                 Build analog submodules on single boards.<br>
                                 Patch them with standard Eurorack modules.<br>
-                                8-channel polyphony in 42-HP.
+                                8-channel stereophonic polyphony in 46-HP.
                             </p>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
                             <h3>Hybrid</h3>
                             <p>
                                 Use digital controls to drive analog signals.<br>
-                                Experiment with analog crosspoint switching.<br>
+                                Experiment with dynamic patching.<br>
                                 Create sounds that nobody has ever heard.
                             </p>
                         </div>
@@ -193,10 +193,10 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div class="text-left">
                             <p>
-                                ISHIZENO i8 is currently under development. We are now in the process of gathering requirements and validating some of the core technologies that are planned to be used for the sythesizer, like the <a href="http://www.analog.com/en/switchesmultiplexers/analog-crosspoint-switches/ad75019/products/product.html" target="external">AD75019</a> analog crosspoint switch. We hope to complete a first prototype for <a href="https://www.namm.org/summer/2015" target="external">Summer NAMM 2015</a>, and a small production run before the end of the year.
+                                ISHIZENO i8 is currently under development. We are now in the process of gathering requirements and validating some of the core technologies that are planned to be used for the sythesizer, like the <a href="http://www.analog.com/en/switchesmultiplexers/analog-crosspoint-switches/ad75019/products/product.html" target="external">AD75019</a> analog crosspoint switch and the <a href="http://www.xmos.com/" target="external">XMOS</a> multicore microcontroller. We hope to complete a first prototype this year, and a small production batch next year.
                             </p>
                             <p>
-                                ISHIZENO i8 is designed by Ismael Ghalimi, who is neither a musician nor a synthesizer builder. Instead, he applies his expertise with software development and his fresh perspective on modular synthesis to develop something totally new and radical. Because of that, some of our ideas and designs might be flawed, but we hope that we can quickly converge toward something awesome, thanks to the support that we are receiving from the modular community.
+                                ISHIZENO i8 is designed by Ismael Ghalimi, who is neither a musician nor a synthesizer builder. Instead, he applies his expertise with software development and his fresh perspective on modular synthesis to develop something totally new and radical. Because of that, some of our ideas and designs might be flawed, but we hope that we can quickly converge toward something awesome, thanks to the amazing support that we are receiving from the modular community.
                             </p>
                         </div>
                     </div>
@@ -228,8 +228,8 @@
                                 <div class="service-info">
                                     <h4>8 Polyphonic Channels</h4>
                                     <p>
-                                        Each made of 16 analog ports and 16 digital potentiometers.<br>
-                                        Each powered by its own printed circuit board.
+                                        Each made of stereophonic inputs/outputs and 16 CV inputs.<br>
+                                        Each powered by its own synthesizer submodule.
                                     </p>
                                 </div>
                             </div>
@@ -304,9 +304,9 @@
                             </div>
                             <div class="col-md-10">
                                 <div class="service-info">
-                                    <h4>128 Channel Oscilloscope</h4>
+                                    <h4>32 Channel Oscilloscope</h4>
                                     <p>
-                                        Visualize all 128 analog ports simultaneously.<br>
+                                        Visualize all 32 analog ports simultaneously.<br>
                                         Get the pulse of any submodule without any cable.
                                     </p>
                                 </div>
@@ -349,13 +349,25 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 margin-btm-30">
                         <div class="text-center">
-                            <img src="img/faceplate.png" width="100%">
+                            <a href="img/faceplate.png" target="external"><img src="img/faceplate.png" width="100%"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <p class="lead margin-btm-30">
-                        Powered by a powerful Raspberry Pi 2 Model B.
+                        Powered by a 16-core XMOS microcontroller.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 margin-btm-30">
+                        <div class="text-center">
+                            <a href="http://www.xmos.com/products/silicon/u-series" target="external"><img src="img/xmos.jpg" width="50%"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <p class="lead margin-btm-30">
+                        Interfaced by a versatile Raspberry Pi 2 Model B.
                     </p>
                 </div>
                 <div class="row">
@@ -367,7 +379,7 @@
                 </div>
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <p class="lead">
-                        Anticipated retail price: <strong>$995</strong> (2 channels) to <strong>$1,995</strong> (8 channels)
+                        Anticipated retail price: <strong>$1,495</strong>
                     </p>
                 </div>
             </div>
@@ -390,13 +402,13 @@
             </div>
         </div>
 
-        <!-- Backplane Section -->
-        <section id="backplane" class="section-padding">
+        <!-- Architecture Section -->
+        <section id="architecture" class="section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="center-heading text-center">
-                            <h2>Backplane</h2>
+                            <h2>Architecture</h2>
                             <span class="icon"><i class="fa fa-cogs"></i></span> 
                         </div>
                     </div>
@@ -404,7 +416,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 margin-btm-30">
                         <div class="text-center">
-                            <img src="img/backplane.png" width="100%">
+                            <a href="img/diagram.png" target="external"><img src="img/diagram.png" width="100%"></a>
                         </div>
                     </div>
                 </div>
@@ -412,7 +424,7 @@
                     <div class="col-md-8 col-md-offset-2 margin-btm-30">
                         <div class="text-left">
                             <p>
-                                Out of the box, the module does not provide any synthesis capabilities. Instead, these are added through optional submodules, with up to 8 modules (one per channel). Programming of the module is done through the Linux operating system of the embedded Raspberry Pi. For example, the Pi can be used as software sequencer. The analog crosspoint switches can also be reconfigured dynamically in order to support low-frequency patching.
+                                Out of the box, the module only provides limited synthesis capabilities. Instead, these are added through 8 optional submodules (one per stereophonic channel). Programming of the module is done through the Linux operating system of the embedded Raspberry Pi, or through any Android, iOS, Linux, Mac OS X, or Windows device connected to the XMOS controller through USB Audio Class 2.0, using the <a href="https://eclipse.org/" target="external">Eclipse IDE</a>. For example, the Pi can be used as software sequencer, while the XMOS can be used as DSP for the pre-processing of CV levels. The XMOS <a href="http://www.xmos.com/published/xconnect-architecture" target="external">xCONNECT</a> crossbar switch and the <a href="http://www.analog.com/en/switchesmultiplexers/analog-crosspoint-switches/ad75019/products/product.html" target="external">AD75019</a> analog crosspoint switches can also be used to support low-frequency dynamic patching.
                             </p>
                         </div>
                     </div>
@@ -422,17 +434,21 @@
                     <div id="work-slide" class="owl-carousel">
                         <div>
                             <div class="col-md-6 text-center">
-                                <img src="img/shield.jpg" width="75%">
+                                <img src="img/focal.jpg" width="50%">
                             </div>
                             <div class="col-md-6">
                                 <div class="work-detail">
-                                    <h2>8 Polyphonic Channels</h2>
-                                    <p>Each of the 8 polyphonic channels includes the following:</p>
+                                    <h2>8 Stereophonic Channels</h2>
+                                    <p>Each of the 8 stereophonic channels includes the following:</p>
                                     <ul>
-                                        <li>16 analog ports connected to 2 <a href="http://www.analog.com/en/switchesmultiplexers/analog-crosspoint-switches/ad75019/products/product.html">AD75019</a> crosspoint switches</li>
-                                        <li>16 digital potentiometers powered by 4 <a href="http://www.analog.com/en/products/digital-to-analog-converters/precision-dac-lessthanequalto-12mhz/digital-potentiometers/ad5263.html">AD5263</a> devices</li>
-                                        <li>16 analog-to-digital converters powered by 2 <a href="http://www.analog.com/en/products/analog-to-digital-converters/ad-converters/ad7606.html">AD7606</a> devices</li>
+                                        <li>One stereophonic raw analog audio input</li>
+                                        <li>One stereophonic raw analog audio output</li>
+                                        <li>One stereophonic pre-processed digital audio input</li>
+                                        <li>One stereophonic post-processed digital audio output</li>
+                                        <li>16 raw analog CV inputs</li>
+                                        <li>16 pre-processed digital CV inputs</li>
                                     </ul>
+                                    <p>Just add a good pair of monitors like the <a href="http://www.focal.com/en/sm6/137-twin6-be-3544056801404.html" target="external">Focal Twin6 Be</a>...</p>
                                 </div>
                             </div>
                         </div>
@@ -441,10 +457,10 @@
                                 <div class="work-detail">
                                     <h2>Dynamic Patching</h2>
                                     <p>
-                                        Patching across channels can be done in a traditional way with patch cables, through the analog crosspoint switches, or through multi-channel shields. Using dynamic patching, any pair of ports of any pair of channels can be patched together. Furthermore, dynamic patching allows any analog port to be patched to any potentiometer.
+                                        Patching across channels can be done in a traditional way with patch cables, through the XMOS <a href="http://www.xmos.com/published/xconnect-architecture" target="external">xCONNECT</a> crossbar switch, or through the <a href="http://www.analog.com/en/switchesmultiplexers/analog-crosspoint-switches/ad75019/products/product.html" target="external">AD75019</a> analog crosspoint switches. Using dynamic patching, any of the 16 inputs and 16 outputs can be patched to any of the 16 CV outputs of any channel, or to any voice of its stereophonic audio input.
                                     </p>
                                     <p>
-                                        Dynamic patching is enabled by a matrix of 8 or 16 <a href="http://www.analog.com/en/switchesmultiplexers/analog-crosspoint-switches/ad75019/products/product.html" target="external">AD75019</a> analog crosspoint switches. These switches have no gain and a low 150 Ω on resistance. No more than two switches are ever used on the analog path, limiting the on resistance to 300 Ω.
+                                        The AD75019 analog crosspoint switches have no gain and a low 150 Ω on resistance. No more than two switches are ever used on the analog path, thereby limiting the on resistance to 300 Ω. For its part, the xCONNECT has a low round trip latency of 3ms when used over USB Audio Class 2.0.
                                     </p>
                                 </div>
                             </div>
@@ -460,93 +476,10 @@
                                 <div class="work-detail">
                                     <h2>Patching Interface</h2>
                                     <p>
-                                        Dynamic patching can be done through the Eurorack module, the web user interface, or a dedicated controller like the <a href="#grid">ISHIZENO g3</a> connected to the Raspberry Pi through the faceplate's USB 3.1 Type C connector.
+                                        Dynamic patching can be handled through the Eurorack module, through the web user interface, or through a dedicated controller like the <a href="#grid">ISHIZENO g3</a>, which is connected to the Raspberry Pi 2 over a built-in WiFi hotspot.
                                     </p>
                                     <p>
-                                        From the Eurorack module's faceplate, two ports can be patched by simply clicking on the RGB illuminated knobs. When the module is equipped with 8 analog crosspoint switches, 16 ports can be patched together. With 16 switches, this limit is increased to 32.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="col-md-6 margin-btm-30">
-                                <div class="work-detail">
-                                    <h2>Mono/Stereo Mixers</h2>
-                                    <p>
-                                        By default the A8 and A16 analog ports of every polyphonic channel are assumed to be the left and right stereophonic outputs of the channel, while A16 is assumed to be the monophonic output.</p>
-                                    <p>
-                                        These 8 monophonic or stereophonic outputs can be mixed together using a built-in set of 8 inverting amplifiers and one summing amplifier, all powered by the <a href="http://www.ti.com/lit/ds/symlink/lm833-n.pdf" target="external">LM833</a> dual high-speed audio operational amplifier.
-                                    </p>
-                                    <p>
-                                        To define mixing settings, click twice on any knob. From there, the 8 top knobs can be used to mix the 8 left outputs, while the 8 bottom knobs are used to mix the 8 right outputs.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <a href="http://www.ti.com/lit/ds/symlink/lm833-n.pdf" target="external"><img src="img/amplifier.jpg" width="75%"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Extensible Tagline -->
-        <div class="divided-50"></div>
-        <div class="cta cta-tagline">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 margin-btm-30">
-                        <h3>
-                            <strong>ISHIZENO i8</strong> is integrated and modular.
-                        </h3>
-                    </div>
-                    <div class="col-sm-4">
-                        <a href="#contact" class="btn btn-theme btn-lg btn-tagline">Reserve now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Details Section -->
-        <section id="details" class="section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="center-heading text-center">
-                            <h2>Features</h2>
-                            <span class="icon"><i class="fa fa-bell"></i></span> 
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="details-slide" class="owl-carousel">
-                        <div>
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="work-detail">
-                                    <h2>128-channel Oscilloscope</h2>
-                                    <p>
-                                        The 16 analog ports of every polyphonic channel are directly connected to a pair of <a href="http://www.analog.com/en/products/analog-to-digital-converters/ad-converters/ad7606.html">AD7606</a> 8-channel 16-bit analog-to-digital converters. This allows the web user interface to be used as a low-resolution 128-channel oscilloscope for signal visualization.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="work-detail">
-                                    <h2>Digital Potentiometers</h2>
-                                    <p>
-                                        The 16 physical knobs can be dynamically assigned to any polyphonic channel. These knobs use rotary encoders with 24 detents and 24 PPR resolution. They also provide SPST momentary switching and RGB led illumination. Knob settings are passed to a submodule section by the Raspberry Pi 2 through its SPI bus.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="work-detail">
-                                    <h2>Dual-Channel Backplanes</h2>
-                                    <p>
-                                        The 8-channel backplane is actually broken into four separate dual-channel backplanes that can be purchased separately, to provide support for 2 to 8 polyphonic channels. The dual-channel backplanes are connected to the crosspoint bus through the faceplate PCB.
+                                        From the Eurorack module's faceplate, an input port can be patched to a channel by clicking twice on the port's knob (knob with the same number), then rotating the channel's knob to select the desired CV input. Similar operations can be executed to adjust CV settings or patch output ports.
                                     </p>
                                 </div>
                             </div>
@@ -555,7 +488,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- Extensible Tagline -->
         <div class="divided-50"></div>
@@ -592,12 +524,12 @@
                                 ISHIZENO i8 is designed to be as open as possible, across all layers of the software stack:
                             </p>
                             <ul>
-                                <li>Web user interface implemented using <a href="http://nodejs.org/" target="external">Node.js</a> and <a href="http://famo.us/" target="external">famo.us</a></li>
-                                <li>Mixed signal middleware implemented using C++ libraries</li>
+                                <li>Web user interface implemented using <a href="http://nodejs.org/" target="external">Node.js</a> and <a href="https://angularjs.org/" target="external">AngularJS</a></li>
+                                <li>Mixed signal middleware implemented using <a href="https://www.xmos.com/products/tools/xtimecomposer" target="external">xTIMEcomposer</a></li>
                                 <li>Online services implemented using the <a href="https://cloud.google.com/" target="external">Google Cloud Platform</a></li>
                             </ul>
                             <p>
-                                Since the Raspberry Pi runs a web server and is used as central nervous system for the module, developing an application for the ISHIZENO i8 is like developing a web application. The user interface is implemented in HTML, JavaScript, and CSS, while integration with external controllers connected to the Pi through USB is done with simple web services. This should broaden the community of developers who can create new applications for modular synthesizers.
+                                Since the Raspberry Pi runs a web server and is used as central nervous system for the module, developing an application for the ISHIZENO i8 is like developing a web application. The user interface is implemented in HTML, JavaScript, and CSS, while integration with external controllers connected to the Pi over WiFi is done with simple web services. This should broaden the community of developers who can create new applications for modular synthesizers.
                             </p>
                         </div>
                     </div>
@@ -713,7 +645,7 @@
                                 <li>Enhancing the interface of a modular synthesizer with full signal visualization</li>
                                 <li>Simplifying the development of rich user interfaces running on any device</li>
                                 <li>Experimenting with Low-Frequency Patching (think LFO, but for patching)</li>
-                                <li>Using dynamic patching and digital potentiometers to set and record patches</li>
+                                <li>Using dynamic patching and rotary encoders to record patches and settings</li>
                             </ul>
                         </p>
                     </div>

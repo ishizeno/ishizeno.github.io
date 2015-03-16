@@ -434,45 +434,57 @@
                     <div id="work-slide" class="owl-carousel">
                         <div>
                             <div class="col-md-6 text-center">
-                                <img src="img/focal.jpg" width="50%">
+                                <a href="http://www.focal.com/en/sm6/137-twin6-be-3544056801404.html" target="external"><img src="img/focal.jpg" width="50%"></a>
                             </div>
                             <div class="col-md-6">
                                 <div class="work-detail">
                                     <h2>8 Stereophonic Channels</h2>
-                                    <p>Each of the 8 stereophonic channels includes the following:</p>
+                                    <p>Each one of the 8 stereophonic channels includes:</p>
                                     <ul>
-                                        <li>One stereophonic raw analog audio input</li>
-                                        <li>One stereophonic raw analog audio output</li>
-                                        <li>One stereophonic pre-processed digital audio input</li>
-                                        <li>One stereophonic post-processed digital audio output</li>
+                                        <li>1 stereophonic pre-processed digital audio input</li>
+                                        <li>1 stereophonic post-processed digital audio output</li>
+                                        <li>1 stereophonic raw analog audio output</li>
                                         <li>16 raw analog CV inputs</li>
                                         <li>16 pre-processed digital CV inputs</li>
                                     </ul>
-                                    <p>Just add a good pair of monitors like the <a href="http://www.focal.com/en/sm6/137-twin6-be-3544056801404.html" target="external">Focal Twin6 Be</a>...</p>
+                                    <p>Just add a good pair of studio monitors...</p>
                                 </div>
                             </div>
                         </div>
                         <div>
+                            <div class="col-md-6 col-md-offset-1">
+                                <div class="work-detail">
+                                    <h2>Digital and Analog Submodules</h2>
+                                    <p>
+                                        Up to 8 digital or analog submodules can be added in the Eurorack module. Digital submodules can be mounted directly onto the backplane, while analog submodules require the use of individual analog slice boards.
+                                    </p>
+                                    <p>
+                                        An analog slice is made of an <a href="http://www.st.com/web/catalog/mmc/FM141/SC1169/SS1577/LN1035/PF252144?sc=internet/mcu/product/252144.jsp" target="external">STM32F405RG</a> DSP, an <a href="http://www.analog.com/en/products/digital-to-analog-converters/da-converters/ad5360.html" target="external">AD5360</a> 16-channel ADC converter, a <a href="http://www.cirrus.com/en/products/cs42l52.html" target="external">CS42L52</a> dual-channel DAC converter, and a pair <a href="http://www.analog.com/en/products/switches-multiplexers/unbuffered-analog-crosspoint-arrays/ad75019.html" target="external">AD75019</a> crosspoint switches. Together, the expose all CV inputs as both raw and pre-processed analog signals, while converting the stereophonic analog output of the submodule into a digital signal.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 text-center">
+                                <a href="img/slice.png" target="external"><img src="img/slice.png" width="100%"></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col-md-5 text-center">
+                                <a href="http://www.analog.com/en/switchesmultiplexers/analog-crosspoint-switches/ad75019/products/product.html" target="external"><img src="img/ad75019.jpg" width="80%"></a>
+                            </div>
                             <div class="col-md-6 margin-btm-30">
                                 <div class="work-detail">
                                     <h2>Dynamic Patching</h2>
                                     <p>
-                                        Patching across channels can be done in a traditional way with patch cables, through the XMOS <a href="http://www.xmos.com/published/xconnect-architecture" target="external">xCONNECT</a> crossbar switch, or through the <a href="http://www.analog.com/en/switchesmultiplexers/analog-crosspoint-switches/ad75019/products/product.html" target="external">AD75019</a> analog crosspoint switches. Using dynamic patching, any of the 16 inputs and 16 outputs can be patched to any of the 16 CV outputs of any channel, or to any voice of its stereophonic audio input.
+                                        Patching across channels can be done in a traditional way with patch cables, through the XMOS <a href="http://www.xmos.com/published/xconnect-architecture" target="external">xCONNECT</a> crossbar switch, or through the <a href="http://www.analog.com/en/switchesmultiplexers/analog-crosspoint-switches/ad75019/products/product.html" target="external">AD75019</a> analog crosspoint switches. Using dynamic patching, any of the 16 inputs and 16 outputs can be patched to any of the 16 CV inputs of any channel, or to any voice of its stereophonic audio input.
                                     </p>
                                     <p>
-                                        The AD75019 analog crosspoint switches have no gain and a low 150 Ω on resistance. No more than two switches are ever used on the analog path, thereby limiting the on resistance to 300 Ω. For its part, the xCONNECT has a low round trip latency of 3ms when used over USB Audio Class 2.0.
+                                        The AD75019 analog crosspoint switches have no gain and a low 150 Ω on resistance. No more than two switches are ever used on the analog path, thereby limiting the on resistance to 300 Ω. For its part, the xCONNECT has a low roundtrip latency of 3ms when used over USB Audio Class 2.0.
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-6 text-center">
-                                <a href="http://www.analog.com/en/switchesmultiplexers/analog-crosspoint-switches/ad75019/products/product.html" target="external"><img src="img/ad75019.jpg" width="75%"></a>
-                            </div>
                         </div>
                         <div>
-                            <div class="col-md-6 text-center">
-                                <a href="https://www.bourns.com/data/global/pdfs/PEL12T.pdf" target="external"><img src="img/bourns.jpg" width="50%"></a>
-                            </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-md-offset-2">
                                 <div class="work-detail">
                                     <h2>Patching Interface</h2>
                                     <p>
@@ -483,6 +495,102 @@
                                     </p>
                                 </div>
                             </div>
+                            <div class="col-md-3 text-center">
+                                <a href="https://www.bourns.com/data/global/pdfs/PEL12T.pdf" target="external"><img src="img/bourns.jpg" width="80%"></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col-md-4 col-md-offset-1 text-center">
+                                <img src="img/oled.jpg" width="60%">
+                            </div>
+                            <div class="col-md-6 margin-btm-30">
+                                <div class="work-detail">
+                                    <h2>OLED Displays</h2>
+                                    <p>
+                                        The faceplate includes 16 color OLED displays with 16-bit color encoding, 96×64 resolution,  and built-in <a href="https://www.newhavendisplay.com/app_notes/SSD1331.pdf" target="external">SSD1331</a> controller. They can display text, geometric shapes, and bitmap images using the <a href="https://github.com/adafruit/Adafruit-GFX-Library" target="external">Adafruit GFX Library</a>.
+                                    </p>
+                                    <p>
+                                        These displays are dynamically-assigned to channels, inputs, outputs, or settings, and are designed to be used in conjunction with the rotary encoders for controlling most of the functions of the module and its submodules through the <a href="http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus" target="external">SPI</a> bus of the Raspberry Pi 2.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stack Tagline -->
+        <div class="divided-50"></div>
+        <div class="cta cta-tagline">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 margin-btm-30">
+                        <h3>
+                            <strong>ISHIZENO i8</strong> is analog and digital.
+                        </h3>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#contact" class="btn btn-theme btn-lg btn-tagline">Reserve now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specifications Section -->
+        <section id="specifications" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="center-heading text-center">
+                            <h2>Specifications</h2>
+                            <span class="icon"><i class="fa fa-cogs"></i></span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-3">
+                            <p class="lead feature">Faceplate</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>16 rotary encoders with RGB illumination and SPST switching</p>
+                            <p>16 color OLED displays (16-bit, 96×64 resolution)</p>
+                            <p>16 analog inputs (audio signals or CV levels)</p>
+                            <p>16 analog outputs (audio signals or CV levels)</p>
+                            <p>USB Audio Class 2.0 connector (attached to XMOS)</p>
+                            <p>HDMI connector (attached to Pi)<p>
+                            <p>TRS 3.5mm stereo headphones connector</p>
+                            <p>DB25 8-channel audio output connector</p>
+                        </div>
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="lead feature">Backplane</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>Raspberry Pi 2 Model B</p>
+                            <p>Built-in WiFi hotspot</p>
+                            <p>16-core XMOS XS1-U16A-128 microcontroller</p>
+                            <p>16-channel 24-bit 192 kHz analog-to-digital audio converters</p>
+                            <p>16-channel 24-bit 216 kHz digital-to-analog audio converters</p>
+                            <p>16-channel 16-bit analog-to-digital CV levels converters</p>
+                            <p>16-channel 16-bit digital-to-analog CV levels converters</p>
+                            <p>16-channel analog mixer</p>
+                            <p>32×16 analog switching matrix</p>
+                            <p>8 submodule bays</p>
+                            <p>Extension port for companion module</p>
+                        </div>
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="lead feature">USB Host</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>USB Audio Class 2.0</p>
+                            <p>Android, iOS, Linux, Mac OS X, or Windows</p>
                         </div>
                     </div>
                 </div>
@@ -569,7 +677,7 @@
                     <div class="col-md-8 col-md-offset-2 text-center wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">
                         <p class="lead margin-btm-30">
                             The g3 is an optional companion to the i8.<br>
-                            324 keys and 16 drum pads sensitive to pressure, tilt, and velocity.<br>
+                            324 keys and 16 pads sensitive to pressure, tilt, and velocity.<br>
                             8 customizable controls for mode selection and track transport.
                         </p>
                     </div>
@@ -591,16 +699,20 @@
                         <div class="col-md-8 col-md-offset-2 margin-btm-30">
                             <div class="text-left">
                                 <p>
-                                    While the module can be used with any USB controller, it is being developed jointly with a grid controller, the ISHIZENO g3. This grid is made of 324 keys, 16 drum pads, and 8 controls. Keys, drum pads, and controls are illuminated by RGB leds and are sensitive to pressure, tilt, and velocity.
+                                    While the module can be used with any USB controller, it is being developed jointly with a grid controller, the ISHIZENO g3. This grid is made of 324 keys, 16 drum pads, and 8 controls. Keys, pads, and controls are illuminated by RGB leds and are sensitive to pressure, tilt, and velocity.
                                 </p>
-                                <p>
-                                    The controller can be used for playing, sequencing, or mixing:
-                                </p>
-                                <ul>
-                                    <li><strong>Playing mode:</strong> 8 rows of 36 keys for playing across 3 octaves and 8 channels, 1 row for sequencing.</li>
-                                    <li><strong>Sequencing mode:</strong> 8 rows of 36 keys for multi-channel sequencing, 1 row for note selection.</li>
-                                    <li><strong>Mixing mode:</strong> 8 rows of 36 keys for channel level setting, 1 row for master output level.</li>
-                                </ul>
+                                <div class="col-md-2 text-right"><strong>Playing</strong></div>
+                                <div class="col-md-10">
+                                    <p>8 rows of 36 keys for playing across 3 octaves and 8 channels, 1 row for sequencing.</p>
+                                </div>
+                                <div class="col-md-2 text-right"><strong>Sequencing</strong></div>
+                                <div class="col-md-10">
+                                    <p>8 rows of 36 keys for multi-channel sequencing, 1 row for note selection.</p>
+                                </div>
+                                <div class="col-md-2 text-right"><strong>Mixing</strong></div>
+                                <div class="col-md-10">
+                                    <p>8 rows of 36 keys for channel level setting, 1 row for master output level.</p>
+                                </div>
                                 <p>
                                     The controller is made of a black walnut frame and is controlled by an embedded Raspberry Pi 2. It also provides a longitudinal groove capable of holding up to 8 tablets in a semi-vertical position, and can be extended with left and right docks for hosting one or two tablets horizontally.
                                 </p>
@@ -620,7 +732,7 @@
         <div class="divided-50"></div>
         <div class="cta-3">
             <div class="container text-center">
-                <h3 class=" wow animated fadeInUp"  data-wow-duration="700ms" data-wow-delay="100ms">8 polyphonic channels on 46-HP</h3>
+                <h3 class=" wow animated fadeInUp"  data-wow-duration="700ms" data-wow-delay="100ms">8 stereophonic channels on 46-HP</h3>
                 <p class=" wow animated fadeInDown"  data-wow-duration="700ms" data-wow-delay="200ms"><a href="#contact" class="btn btn-border-white btn-lg scrollto">Reserve Now</a></p>
             </div>
         </div>

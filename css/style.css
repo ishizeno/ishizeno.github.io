@@ -512,6 +512,9 @@ h2.slide-btm-text{
 #product{
     background: url("../img/showcase-2.jpg");
 }
+.feature {
+    margin-top: -6px;
+}
 .service-icon i{
     width: 70px;
     height: 70px;
@@ -661,58 +664,6 @@ h2.slide-btm-text{
     -webkit-transform: scale(1.1); 
     -o-transform: scale(1.1); 
     transform: scale(1.1); 
-}
-
-/*———————————————————————————————————————————————————————————————————————————*/
-/*  Pricing                                                                  */
-/*———————————————————————————————————————————————————————————————————————————*/
-.plan-wrap{
-    border: 1px solid #EFEFEF;
-}
-.price-title{
-    padding: 20px 0;
-    background: #f4f7f8;
-    text-align: center;
-    border-bottom: 1px solid #EFEFEF;
-}
-.price-title h4{
-    margin: 0;
-}
-.plan-price{
-    padding: 20px 0;  
-    text-align: center;
-    border-bottom: 1px solid #efefef;
-}
-.plan-price h2 span{
-    font-size: 12px;
-    font-weight: 300;
-    vertical-align: middle;
-    color: #777;
-    margin-right: 5px;
-}
-.plan-price h2{
-    font-size: 45px;
-    color: #333;
-    margin: 0;
-}
-.plan-features li{
-    display: block;
-    margin: 0;
-    padding: 10px 30px;
-    border-bottom: 1px solid #EFEFEF;
-    font-size: 16px;
-}
-.plan-features li i{
-    margin-right: 15px;
-    color: #999;
-}
-.plan-link{
-    padding: 15px 0;
-    text-align: center;
-}
-.plan-wrap.popular .price-title{
-    background-color: #25CBF5;
-    color: #fff;
 }
 
 /*———————————————————————————————————————————————————————————————————————————*/

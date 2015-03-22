@@ -129,7 +129,7 @@
                             <i class="fa fa-plug"></i>
                             <h3>Modular</h3>
                             <p>
-                                Build analog submodules on single boards.<br>
+                                Build hybrid submodules on single boards.<br>
                                 Patch them with standard Eurorack modules.<br>
                                 8-channel stereophonic polyphony in 58-HP.
                             </p>
@@ -286,7 +286,7 @@
                                     <h4>Wireless User Interface</h4>
                                     <p>
                                         Use any smartphone, tablet, or PC as user interface.<br>
-                                        Connect to your synthesizer with built-in WiFi hotspot.
+                                        Connect to your synthesizer through Ethernet or WiFi.
                                     </p>
                                 </div>
                             </div>
@@ -306,7 +306,7 @@
                                 <div class="service-info">
                                     <h4>64 Channel Oscilloscope</h4>
                                     <p>
-                                        Visualize all 64 analog ports simultaneously.<br>
+                                        Visualize all 64 analog I/Os simultaneously.<br>
                                         Get the pulse of any submodule without any cable.
                                     </p>
                                 </div>
@@ -466,7 +466,7 @@
                                         Up to 8 digital or analog submodules can be added to the tabletop system. Digital submodules can be mounted directly onto the backplane, while analog submodules require the use of individual analog slice boards.
                                     </p>
                                     <p>
-                                        An analog slice is made of an  an <a href="http://www.analog.com/en/products/digital-to-analog-converters/da-converters/ad5360.html" target="external">AD5360</a> 16-channel ADC converter, and a <a href="http://www.cirrus.com/en/products/cs42l52.html" target="external">CS42L52</a> dual-channel DAC converter. Together, the expose all CV inputs as both raw and pre-processed analog signals, while converting the stereophonic analog output of the submodule into a digital signal.
+                                        An analog slice is made of an  an <a href="http://www.analog.com/en/products/digital-to-analog-converters/da-converters/ad5360.html" target="external">AD5360</a> 16-channel ADC converter, and a <a href="http://www.cirrus.com/en/products/cs42l52.html" target="external">CS42L52</a> dual-channel DAC converter. Together, they expose all CV inputs as both raw and pre-processed analog signals, while converting the stereophonic analog output of the submodule into a digital signal.
                                     </p>
                                 </div>
                             </div>
@@ -579,9 +579,32 @@
                             <p>Host USB 2.0 connector</p>
                             <p>Gigabit Ethernet RJ45 connector</p>
                             <p>HDMI connector (PCIe, LVDS)<p>
-                            <p>TRS 6.25mm stereo headphones connector</p>
+                            <p>6.25mm TRS stereo headphones connector</p>
                             <p>2 × DB25 8-channel audio inputs connectors</p>
                             <p>2 × DB25 8-channel audio ouputs connectors</p>
+                        </div>
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="lead feature">Base Board</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>Xilinx Zynq-7020 AP SoC</p>
+                            <p>1 GB DDR3 SDRAM</p>
+                            <p>512 MB NAND flash</p>
+                            <p>16 MB quad SPI flash</p>
+                        </div>
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="lead feature">Audio Board</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>16-channel 32-bit 328 kHz analog-to-digital audio converters</p>
+                            <p>16-channel 32-bit 192 kHz digital-to-analog audio converters</p>
+                            <p>16-channel analog mixer</p>
                         </div>
                         <div class="col-md-12">
                             <hr>
@@ -590,15 +613,8 @@
                             <p class="lead feature">Backplane</p>
                         </div>
                         <div class="col-md-9">
-                            <p>Xilinx Zynq-7020 AP SoC</p>
-                            <p>1 GB DDR3 SDRAM</p>
-                            <p>512 MB NAND flash</p>
-                            <p>16 MB quad SPI flash</p>
-                            <p>16-channel 32-bit 328 kHz analog-to-digital audio converters</p>
-                            <p>16-channel 32-bit 192 kHz digital-to-analog audio converters</p>
                             <p>16-channel 16-bit analog-to-digital CV levels converters</p>
                             <p>16-channel 16-bit digital-to-analog CV levels converters</p>
-                            <p>16-channel analog mixer</p>
                             <p>8 × SO-DIMM submodule sockets</p>
                         </div>
                         <div class="col-md-12">
@@ -660,7 +676,7 @@
                             </p>
                             <ul>
                                 <li>Web user interface implemented using <a href="http://nodejs.org/" target="external">Node.js</a> and <a href="https://angularjs.org/" target="external">AngularJS</a></li>
-                                <li>Mixed signal middleware implemented using C++ and VHDL</li>
+                                <li>Mixed signal middleware implemented using <a href="http://en.wikipedia.org/wiki/C%2B%2B" target="external">C++</a> and <a href="http://en.wikipedia.org/wiki/VHDL" target="external">VHDL</a></li>
                                 <li>Online services implemented using the <a href="https://cloud.google.com/" target="external">Google Cloud Platform</a></li>
                             </ul>
                             <p>

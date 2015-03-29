@@ -140,8 +140,8 @@
                             <i class="fa fa-music"></i>
                             <h3>Hybrid</h3>
                             <p>
-                                Sample analog audio and CV signals.<br>
-                                Patch and sculpt them in the digital domain.<br>
+                                Sample audio and control voltage analog signals.<br>
+                                Patch and process them in the digital domain.<br>
                                 Create sounds that nobody has ever heard.
                             </p>
                         </div>
@@ -196,7 +196,7 @@
                                 ISHIZENO i8 is currently under development. We are now in the process of gathering requirements and validating some of the core technologies that are planned to be used for the system, like the <a href="http://www.adapteva.com/docs/e16g301_datasheet.pdf" target="external">Adapteva E16G301</a> 16-core microprocessor. If we do not hit any major roadblock, we hope to complete a first prototype this year, and a small production batch next year.
                             </p>
                             <p>
-                                ISHIZENO i8 is designed by <a href="https://www.linkedin.com/in/ghalimi/en" target="external">Ismael Ghalimi</a>, who is neither a musician nor a synthesizer builder. Instead, he applies his expertise with software development and his fresh perspective on modular synthesis to develop something totally new and radical. Because of that, some of our ideas and designs might be flawed, but we hope that we can quickly converge toward something awesome, thanks to the amazing support that we are receiving from the open hardware community.
+                                ISHIZENO i8 is designed by <a href="https://www.linkedin.com/in/ghalimi/en" target="external">Ismael Ghalimi</a>, who is neither a musician nor a synthesizer builder. Instead, he applies his expertise with software development and his fresh perspective on sound processing to develop something totally new and radical.
                             </p>
                         </div>
                     </div>
@@ -355,7 +355,7 @@
                 </div>
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <p class="lead margin-btm-30">
-                        Powered by Parallella-16 board.
+                        Powered by 4 Parallella-16 boards
                     </p>
                 </div>
                 <div class="row">
@@ -428,7 +428,7 @@
                                 <div class="work-detail">
                                     <h2>Parallel Architecture</h2>
                                     <p>
-                                        Each of the four Parallella-16 boards includes a <a href="http://www.xilinx.com/products/silicon-devices/soc/zynq-7000/silicon-devices.html" target="external">Xilinx Zynq-7020</a> FPGA and an <a href="http://www.adapteva.com/docs/e16g301_datasheet.pdf" target="external">Adapteva E16G301</a> 16-core microprocessor. The Zynq runs the Linux operating system on an ARM dual-core Cortex-A9 processor, and provides 85K logic cells, or 220 DSP slices. The Adapteva includes 16 CPU cores.
+                                        Each of the four Parallella-16 boards includes a <a href="http://www.xilinx.com/products/silicon-devices/soc/zynq-7000/silicon-devices.html" target="external">Xilinx Zynq-7020</a> FPGA and an <a href="http://www.adapteva.com/docs/e16g301_datasheet.pdf" target="external">Adapteva E16G301</a> 16-core microprocessor. The Zynq runs the Linux operating system on an ARM dual-core Cortex-A9 processor, and provides 85K logic cells, or 220 DSP slices. The Adapteva is used as co-processor.
                                     </p>
                                     <p>
                                         Through the backplane, the 4 Zynq devices are connected over an <a href="http://en.wikipedia.org/wiki/Audio_Video_Bridging" target="external">AVB</a> Gigabit Ethernet network, while the 4 Adapteva devices are connected through a high-performance mesh network with a square topology offering 8 GB/s off-chip bandwidth and 3 ns latency.
@@ -507,7 +507,7 @@
                             <p class="lead feature">Faceplate</p>
                         </div>
                         <div class="col-md-9">
-                            <p>2 × color LCD touchscreens (16-bit colors, 800×480 resolution)</p>
+                            <p>2 × LCD color touchscreens (16-bit colors, 800×480 resolution)</p>
                             <p>1 × 40mm jog dial</p>
                             <p>9 × RGB illuminated transport buttons</p>
                             <p>8 × RGB illuminated rotary encoders with SPST switching</p>
@@ -577,8 +577,22 @@
                             <p class="lead feature">DAC Board</p>
                         </div>
                         <div class="col-md-9">
-                            <p>16-channel 32-bit 384 kHz digital-to-analog audio converters</p>
+                            <p>18-channel 32-bit 384 kHz digital-to-analog audio converters</p>
                             <p>Power supply regulators</p>
+                        </div>
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="lead feature">Amplifier</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>Dedicated LME49610 for each channel</p>
+                            <p>Optimized layout for star ground</p>
+                            <p>C0G and WIMA film capacitors</p>
+                            <p>0.1% low noise thin film resistors</p>
+                            <p>2 µm Ag gold-plated headphones sockets</p>
+                            <p>No thermal relief in soldering pad</p>
                         </div>
                         <div class="col-md-12">
                             <hr>
@@ -738,6 +752,13 @@
                                 <p>
                                     While the module can be used with any USB controller, it is being developed jointly with a grid controller, the ISHIZENO g3. This grid is made of 324 keys, 16 drum pads, and 8 controls. Keys, pads, and controls are illuminated by RGB leds and are sensitive to pressure and velocity.
                                 </p>
+                                <p>
+                                    The controller is made of a black walnut frame and is controlled by an embedded Raspberry Pi 2. It also provides a longitudinal groove capable of holding up to 8 tablets in a semi-vertical position, and can be extended with left and right docks for hosting one or two tablets horizontally.
+                                </p>
+                                <div class="col-md-2 text-right"><strong>Mixing</strong></div>
+                                <div class="col-md-10">
+                                    <p>8 rows of 36 keys for channel level setting, 1 row for master output level.</p>
+                                </div>
                                 <div class="col-md-2 text-right"><strong>Playing</strong></div>
                                 <div class="col-md-10">
                                     <p>8 rows of 36 keys for playing across 3 octaves and 8 channels, 1 row for sequencing.</p>
@@ -746,13 +767,6 @@
                                 <div class="col-md-10">
                                     <p>8 rows of 36 keys for multi-channel sequencing, 1 row for note selection.</p>
                                 </div>
-                                <div class="col-md-2 text-right"><strong>Mixing</strong></div>
-                                <div class="col-md-10">
-                                    <p>8 rows of 36 keys for channel level setting, 1 row for master output level.</p>
-                                </div>
-                                <p>
-                                    The controller is made of a black walnut frame and is controlled by an embedded Raspberry Pi 2. It also provides a longitudinal groove capable of holding up to 8 tablets in a semi-vertical position, and can be extended with left and right docks for hosting one or two tablets horizontally.
-                                </p>
                             </div>
                         </div>
                     </div>

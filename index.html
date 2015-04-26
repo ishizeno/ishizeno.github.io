@@ -130,7 +130,7 @@
                             <h3>Versatile</h3>
                             <p>
                                 Start with a 16×16 32-bit audio interface.<br>
-                                Add a polyphonic synthesizer and a DSP mesh.<br>
+                                Add a powerful FPGA-powered synthesizer.<br>
                                 Wrap with a 16-channel control surface.
                             </p>
                         </div>
@@ -142,7 +142,7 @@
                             <p>
                                 Sample analog audio and control voltage signals.<br>
                                 Patch and process them in the digital domain.<br>
-                                Create sounds that nobody has ever heard.
+                                Reach unprecedented levels of polyphony.
                             </p>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                             <i class="fa fa-github-alt"></i>
                             <h3>Open</h3>
                             <p>
-                                Customize any of the 17 printed circuit boards.<br>
+                                Customize any of the 15 printed circuit boards.<br>
                                 Develop user interfaces as web applications.<br>
                                 Open design hardware, open source software.
                             </p>
@@ -193,7 +193,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div class="text-left">
                             <p>
-                                ISHIZENO i8 is currently under development. We are now in the process of gathering <a href="https://docs.google.com/spreadsheets/d/1R6DKdeEwwQq7qCXW4_l9Yxj6cd260YzhvAQlDXZHuxg/edit#gid=0" target="external">requirements</a> and validating some of the core technologies that are planned to be used for the system, like the <a href="http://www.adapteva.com/docs/e16g301_datasheet.pdf" target="external">Adapteva E16G301</a> 16-core microprocessor. If we do not hit any major roadblock, we hope to complete a first prototype in 2016, and a small production batch the year after.
+                                ISHIZENO i8 is currently under development. We are now in the process of gathering <a href="https://docs.google.com/spreadsheets/d/1R6DKdeEwwQq7qCXW4_l9Yxj6cd260YzhvAQlDXZHuxg/edit#gid=0" target="external">requirements</a> and validating some of the core technologies that we are planning to integrate into the system, like the <a href="http://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html" target="external">Zynq UltraScale+</a> MPSoC or the <a href="" target="external">XMOS XEF200</a> multicore microcontroller. If we do not hit any major roadblock, we hope to complete a first prototype in 2016, and a small batch the year after.
                             </p>
                             <p>
                                 ISHIZENO i8 is designed by <a href="https://www.linkedin.com/in/ghalimi/en" target="external">Ismael Ghalimi</a>, who is neither a musician, nor an electrical engineer. Instead, he applies his expertise with software development and his unadulterated perspective on audio synthesis and sound processing to create something new and radical.
@@ -268,7 +268,7 @@
                                     <h4>Hybrid Synthesizer</h4>
                                     <p>
                                         16 analog CV inputs and 16 analog CV outputs.<br>
-                                        72 CPU cores, 880 DSP slices, high-speed mesh network.
+                                        166 CPU cores, 3,528 FPGA DSP slices.
                                     </p>
                                 </div>
                             </div>
@@ -307,7 +307,7 @@
                                     <h4>Control Surface</h4>
                                     <p>
                                         9 motorized faders with dual 64-LED RGB bargraphs.<br>
-                                        Jog wheel, 8 RGB illuminated knobs, 78 switches.
+                                        Shuttle wheel, 8 RGB illuminated knobs, 78 switches.
                                     </p>
                                 </div>
                             </div>
@@ -363,13 +363,13 @@
                 </div>
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <p class="lead margin-btm-30">
-                        Powered by 4 Parallella-16 boards
+                        Powered by Xilinx Zynq UltraScale+ MPSoC
                     </p>
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-md-offset-4 margin-btm-30">
                         <div class="text-center">
-                            <a href="https://www.parallella.org/" target="external"><img src="img/parallella.jpg" width="100%"></a>
+                            <a href="http://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html" target="external"><img src="img/ultrascale.jpg" width="100%"></a>
                         </div>
                     </div>
                 </div>
@@ -409,18 +409,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <!--div class="row">
                     <div class="col-md-8 col-md-offset-2 margin-btm-30">
                         <div class="text-center">
                             <a href="img/diagram.png" target="external"><img src="img/diagram.png" width="100%"></a>
                         </div>
                     </div>
-                </div>
+                </div-->
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 margin-btm-30">
                         <div class="text-left">
                             <p>
-                                The ISHIZENO i8 is built around 17 customizable printed circuit boards: PSU, audio ADC converters, audio DAC converters, analog CV converters, mesh network, AVB network, headphones amplifier, controllers and indicators. The mesh network backplane itself hosts four <a href="https://www.parallella.org/board/" target="external">Parallella-16</a> submodules, offering a combined 72 CPU cores and 880 DSP slices for audio synthesis and signal processing.
+                                The ISHIZENO i8 is built in a modular fashion with 15 printed circuit boards: power supply unit, backplane, audio converters, CV converters, headphones amplifier, and user interfaces. Its design is optimized to reduce latency and jitter, while offering unprecedented levels of sound processing power.
                             </p>
                         </div>
                     </div>
@@ -429,17 +429,17 @@
                 <div class="row">
                     <div id="work-slide" class="owl-carousel">
                         <div>
-                            <div class="col-md-5 text-center" style="margin-top: 4em;">
-                                <a href="http://www.xilinx.com/products/silicon-devices/soc/zynq-7000.html" target="external"><img src="img/zynq.jpg" width="80%"></a>
+                            <div class="col-md-5 text-center" style="margin-top: 3em;">
+                                <a href="http://esstech.com/" target="external"><img src="img/ess.png" width="60%"></a>
                             </div>
                             <div class="col-md-6 margin-btm-30">
                                 <div class="work-detail">
-                                    <h2>Parallel Architecture</h2>
+                                    <h2>Balanced Design</h2>
                                     <p>
-                                        Each of the four Parallella-16 boards includes a <a href="http://www.xilinx.com/products/silicon-devices/soc/zynq-7000/silicon-devices.html" target="external">Xilinx Zynq-7020</a> FPGA and an <a href="http://www.adapteva.com/docs/e16g301_datasheet.pdf" target="external">Adapteva E16G301</a> 16-core microprocessor. The Zynq runs the Linux operating system on an ARM dual-core Cortex-A9 processor, and provides 85K logic cells, or 220 DSP slices. The Adapteva is used as co-processor.
+                                        Each one of the 8 stereo inputs and 9 stereo outputs is driven by its own audio converter, a dedicated set of FPGA I/Os, and a dedicated 8-core <a href="http://www.xmos.com/products/silicon/xcore-200/xu-series" target="external">XUF208</a> microcontroller. The <a href="http://esstech.com/PDF/ES9102C%20PB%20v0.3%20140820.pdf" target="external">ES9102C</a> is used for analog-to-digital conversion, while the <a href="http://esstech.com/PDF/ES9018S%20PB%20v1.7%20140916.pdf" target="external">ES9018</a> is used for digital-to-analog conversion.
                                     </p>
                                     <p>
-                                        Through the backplane, the 4 Zynq devices are connected over an <a href="http://en.wikipedia.org/wiki/Audio_Video_Bridging" target="external">AVB</a> Gigabit Ethernet network, while the 4 Adapteva devices are connected through a high-performance mesh network with a square topology offering 8 GB/s off-chip bandwidth and 3 ns latency.
+                                        Every audio converter is attached to a dedicated set of power regulators mounted on individual boards, with 7 boards used for each ADC converter, and 4 boards for each DAC converter.
                                     </p>
                                 </div>
                             </div>
@@ -449,10 +449,10 @@
                                 <div class="work-detail">
                                     <h2>Audio Synthesis</h2>
                                     <p>
-                                        The patching of audio and CV signals is handled in the digital domain through the mesh network. All 16 audio inputs and 16 CV inputs are available to all 16 CPU cores of all four submodules for audio synthesis. Also, 16 CV outputs can be produced and converted into analog signals.
+                                        The patching and mixing of audio and CV signals is handled in the digital domain through the FPGA. Every audio input and output and every CV input and output can be driven by dedicated sets of DSP slices, while remaining DSP slices can be used for the synthesis of digital polyphonic voices.
                                     </p>
                                     <p>
-                                        Each Parallella-16 board is responsible for producing two stereophonic outputs which are routed to the digital-to-analog audio converters. Additionally, the 8 stereophonic audio outputs are mixed in the digital domain, then converted into a pair of analog audio signals.
+                                        All synthesis functions such as high-frequency oscillators, low-frequency oscillators, delays, filters, reverbs, and mixers are implemented in <a href="http://en.wikipedia.org/wiki/VHDL" target="external">VHDL</a>, with 32-bit encoding and 384kHz sampling.
                                     </p>
                                 </div>
                             </div>
@@ -468,10 +468,10 @@
                                 <div class="work-detail">
                                     <h2>Audio Mixing</h2>
                                     <p>
-                                        The faceplate includes 9 motorized faders (100 mm) with dual 64-LED RGB bargraphs (one per mono channel), 8 RGB illuminated knobs with SPST switching, one 40 mm jog wheel, and 78 illuminated switches.
+                                        The faceplate includes 9 motorized faders (100 mm) with dual 64-LED RGB bargraphs (one per mono channel), 8 RGB illuminated knobs with SPST switching, one 40 mm shuttle wheel, and 78 illuminated switches.
                                     </p>
                                     <p>
-                                        Mixing is done in the digital domain for the 8 stereophonic audio outputs and a virtually unlimited number of digital audio channels that can be produced by the 64 CPU cores offered by the 4 Adapteva devices, and the 880 DSP slices offered by the 4 Zynq devices.
+                                        Mixing is done in the digital domain for the 9 stereophonic audio outputs, and a virtually unlimited number of digital audio channels produced by the 3,528 DSP slices provided by the FPGA, and the 160 CPU cores offered by the XMOS microcontrollers.
                                     </p>
                                 </div>
                             </div>
@@ -515,15 +515,12 @@
                             <p class="lead feature">Faceplate</p>
                         </div>
                         <div class="col-md-9">
-                            <p>1 × 40 mm jog wheel</p>
+                            <p>1 × 40 mm shuttle wheel</p>
                             <p>2 × folding touchscreens (16-bit colors, 800 × 480 resolution)</p>
-                            <p>2 × 7-port USB hub</p>
                             <p>8 × RGB illuminated 24 PPR rotary encoders with SPST switching</p>
                             <p>9 × 100 mm motorized faders</p>
                             <p>9 × 100 mm dual 64-LED RGB bargraphs</p>
-                            <p>10 × ATmega328 microcontrollers</p>
                             <p>78 × illuminated switches</p>
-                            <p>233 × AS1113 16-channel LED drivers</p>
                         </div>
                         <div class="col-md-12">
                             <hr>
@@ -537,8 +534,6 @@
                             <p>16 × 3.5 mm TRS analog CV inputs</p>
                             <p>16 × 3.5 mm TRS analog CV outputs</p>
                             <p>32 × RGB LEDs</p>
-                            <p>2 × AS1113 16-channel LED drivers</p>
-                            <p>ATmega328 microcontroller</p>
                             <p>Automatic CV output calibration</p>
                             <p>Digital-to-analog CV converter temperature control</p>
                             <p>Mechanical folding button</p>
@@ -581,16 +576,15 @@
                             <p>8 stereo channels</p>
                             <p>Full 32-bit conversion</p>
                             <p>Native sampling rate up to 384 kHz</p>
-                            <p>+127 dB SNR</p>
-                            <p>–120 dB THD+N</p>
+                            <p>+124 dB SNR</p>
+                            <p>–118 dB THD+N</p>
                             <p>Programmable decimation filter</p>
                             <p>Programmable 8-band biquad filter</p>
                             <p>Programmable digital high-pass filter</p>
                             <p>Balanced inputs</p>
                             <p>Buffers for line inputs</p>
-                            <p>I²S outputs with SMB coaxial connectors</p>
                             <p>Digital volume controller</p>
-                            <p>Power supply regulators
+                            <p>56 power supply regulators
                         </div>
                         <div class="col-md-12">
                             <hr>
@@ -599,20 +593,19 @@
                             <p class="lead feature">DAC Board</p>
                         </div>
                         <div class="col-md-9">
-                            <p>3 × ES9018 digital-to-analog converters</p>
+                            <p>9 × ES9018 digital-to-analog converters</p>
                             <p>8 + 1 stereo channels</p>
                             <p>Full 32-bit conversion</p>
                             <p>64-bit accumulator</p>
                             <p>Up to 1.5 MHz sampling rate</p>
-                            <p>+135 dB SNR</p>
+                            <p>+133 dB SNR</p>
                             <p>–120 dB THD+N</p>
                             <p>Pulsar clock</p>
                             <p>Time domain jitter eliminator</p>
                             <p>Integrated DSP functions</p>
                             <p>Customizable filter characteristics</p>
-                            <p>I²S inputs with SMB coaxial connectors</p>
                             <p>Balanced outputs
-                            <p>Power supply regulators</p>
+                            <p>36 power supply regulators</p>
                         </div>
                         <div class="col-md-12">
                             <hr>
@@ -633,65 +626,16 @@
                             <hr>
                         </div>
                         <div class="col-md-3">
-                            <p class="lead feature">AVB Switch</p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>5 × AVB ports</p>
-                            <p>1 × Gigabit Ethernet port</p>
-                            <p>Guaranteed quality of service</p>
-                            <p>Unified clocking and synchronization</p>
-                        </div>
-                        <div class="col-md-12">
-                            <hr>
-                        </div>
-                        <div class="col-md-3">
                             <p class="lead feature">Backplane</p>
                         </div>
                         <div class="col-md-9">
-                            <p>Mesh network with square topology</p>
-                            <p>4 × submodule bays</p>
-                            <p>2 × ATmega328 microcontrollers</p>
-                            <p>7-port USB hub</p>
-                        </div>
-                        <div class="col-md-12">
-                            <hr>
-                        </div>
-                        <div class="col-md-3">
-                            <p class="lead feature">USB Hub</p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>2 × 7-port USB hub</p>
-                            <p>ATmega328 microcontroller</p>
-                        </div>
-                        <div class="col-md-12">
-                            <hr>
-                        </div>
-                        <div class="col-md-3">
-                            <p class="lead feature">Submodules</p>
-                        </div>
-                        <div class="col-md-9">
-                            <p>Xilinx Zynq-7020 AP SoC</p>
-                            <p>ARM dual-core Cortex-A9</p>
-                            <p>Xilinx Artix-7 28 nm FPGA fabric</p>
-                            <p>85K logic cells</p>
-                            <p>560 KB BlockRam</p>
-                            <p>220 DSP slices</p>
-                            <p>Adapteva E16G301 16-core microprocessor</p>
-                            <p>C/C++ and OpenCL programmable</p>
-                            <p>32-bit IEEE floating point support</p>
-                            <p>512KB on-chip distributed shared memory</p>
-                            <p>32 independent DMA channels</p>
-                            <p>Up to 1GHz operating frequency</p>
-                            <p>32 GFLOPS peak performance</p>
-                            <p>512 GB/s local memory bandwidth</p>
-                            <p>64 GB/s Network-On-Chip bisection bandwidth</p>
-                            <p>8 GB/s off-chip bandwidth</p>
-                            <p>1.5 ns network per-hop latency
-                            <p>1 GB DDR3 SDRAM</p>
-                            <p>Micro SD port</p>
-                            <p>HDMI port</p>
-                            <p>USB port</p>
-                            <p>48 GPIO pins</p>
+                            <p>Xilinx Zynq ZU15EG MPSoC</p>
+                            <p>Quad-core ARM Cortex-A53 MPCore up to 1.3GHz</p>
+                            <p>Dual-core ARM Cortex-R5 MPCore up to 600MHz</p>
+                            <p>Mali-400MP GPU up to 466MHz</p>
+                            <p>Xilinx Virtex 16 nm FPGA fabric</p>
+                            <p>597K logic cells</p>
+                            <p>3,528 DSP slices</p>
                         </div>
                         <div class="col-md-12">
                             <hr>
@@ -986,13 +930,13 @@
                     </div>
                     <div class="col-md-4 margin-btm-30 text-center">
                         <div class="fact-inner">
-                            <h1><span class="counter">72</span></h1>
+                            <h1><span class="counter">166</span></h1>
                             <h3>CPU Cores</h3>
                         </div>
                     </div>
                     <div class="col-md-4 margin-btm-30 text-center">
                         <div class="fact-inner">
-                            <h1><span class="counter">880</span></h1>
+                            <h1><span class="counter">3,528</span></h1>
                             <h3>DSP Slices</h3>
                         </div>
                     </div>

@@ -131,7 +131,7 @@
                             <p>
                                 Start with a 16×20 32-bit audio interface.<br>
                                 Add a powerful FPGA-powered synthesizer.<br>
-                                Wrap with an 18-channel control surface.
+                                Wrap into an 18-channel control surface.
                             </p>
                         </div>
                     </div>
@@ -193,10 +193,10 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div class="text-left">
                             <p>
-                                ISHIZENO i8 is currently under development. We are now in the process of gathering <a href="https://docs.google.com/spreadsheets/d/1R6DKdeEwwQq7qCXW4_l9Yxj6cd260YzhvAQlDXZHuxg/edit#gid=0" target="external">requirements</a> and validating some of the core technologies that we are planning to integrate into the system, like the <a href="http://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html" target="external">Zynq UltraScale+</a> MPSoC or the <a href="" target="external">XMOS XEF200</a> multicore microcontroller. If we do not hit any major roadblock, we hope to complete a first prototype in 2016, and a small production run the year after.
+                                ISHIZENO i8 is currently under development. We are now in the process of gathering <a href="https://docs.google.com/spreadsheets/d/1R6DKdeEwwQq7qCXW4_l9Yxj6cd260YzhvAQlDXZHuxg/edit#gid=0" target="external">requirements</a> and validating some of the core technologies that we are planning to integrate into the system, like the <a href="http://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html" target="external">Zynq UltraScale+</a> MPSoC, or the <a href="" target="external">XMOS XEF200</a> multicore microcontroller. If we do not hit any major roadblock, we hope to complete a first prototype in 2016, and a small production run the year after.
                             </p>
                             <p>
-                                ISHIZENO i8 is designed by <a href="https://www.linkedin.com/in/ghalimi/en" target="external">Ismael Ghalimi</a>, who is neither a musician, nor an electrical engineer. Instead, he applies his expertise with software development and his unadulterated perspective on audio synthesis and sound processing to create something new and radical.
+                                ISHIZENO i8 is designed by <a href="https://www.linkedin.com/in/ghalimi/en" target="external">Ismael Ghalimi</a>, who is neither a musician, nor an electrical engineer. Instead, he applies his expertise with software development and his unadulterated perspective on audio synthesis and sound processing to create something new and radical. Are we crazy? Of course!
                             </p>
                         </div>
                     </div>
@@ -246,8 +246,8 @@
                                 <div class="service-info">
                                     <h4>64 Channel Oscilloscope</h4>
                                     <p>
-                                        32-bit audio sampling at 384 KHz.<br>
-                                        16-bit CV sampling at 200 kSPS.<br>
+                                        32 × 32-bit audio sampling at 384 KHz.<br>
+                                        32 × 16-bit CV sampling at 200 kSPS.<br>
                                     </p>
                                 </div>
                             </div>
@@ -347,7 +347,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2 margin-btm-30">
+                    <div class="col-md-8 col-md-offset-2 margin-btm-10">
                         <div class="text-center">
                             <a href="img/system.png" target="external"><img src="img/system.png" width="60%"></a>
                         </div>
@@ -452,7 +452,7 @@
                                         The patching and mixing of audio and CV signals is handled in the digital domain through the FPGA. Every audio input and output and every CV input and output can be driven by dedicated sets of DSP slices, while remaining DSP slices can be used for the synthesis of digital polyphonic voices.
                                     </p>
                                     <p>
-                                        All synthesis functions such as high-frequency oscillators, low-frequency oscillators, delays, filters, reverbs, and mixers are implemented in <a href="http://en.wikipedia.org/wiki/VHDL" target="external">VHDL</a>, with 32-bit encoding and 384kHz sampling.
+                                        All synthesis functions, such as high-frequency oscillators, low-frequency oscillators, delays, filters, reverbs, and mixers are implemented in <a href="http://en.wikipedia.org/wiki/VHDL" target="external">VHDL</a>, with 32-bit encoding and 384kHz sampling.
                                     </p>
                                 </div>
                             </div>
@@ -584,7 +584,7 @@
                             <hr>
                         </div>
                         <div class="col-md-3">
-                            <p class="lead feature">ADC Board</p>
+                            <p class="lead feature">ADC Section</p>
                         </div>
                         <div class="col-md-9">
                             <p>8 × ES9102C analog-to-digital converters</p>
@@ -605,7 +605,7 @@
                             <hr>
                         </div>
                         <div class="col-md-3">
-                            <p class="lead feature">DAC Board</p>
+                            <p class="lead feature">DAC Section</p>
                         </div>
                         <div class="col-md-9">
                             <p>10 × ES9018 digital-to-analog converters</p>

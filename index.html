@@ -129,9 +129,9 @@
                             <i class="fa fa-power-off"></i>
                             <h3>Versatile</h3>
                             <p>
-                                Start with a 16×16 32-bit audio interface.<br>
+                                Start with a 16×20 32-bit audio interface.<br>
                                 Add a powerful FPGA-powered synthesizer.<br>
-                                Wrap with a 16-channel control surface.
+                                Wrap with an 18-channel control surface.
                             </p>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                             <i class="fa fa-github-alt"></i>
                             <h3>Open</h3>
                             <p>
-                                Customize any of the 15 printed circuit boards.<br>
+                                Customize any of the 4 printed circuit boards.<br>
                                 Develop user interfaces as web applications.<br>
                                 Open design hardware, open source software.
                             </p>
@@ -193,7 +193,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div class="text-left">
                             <p>
-                                ISHIZENO i8 is currently under development. We are now in the process of gathering <a href="https://docs.google.com/spreadsheets/d/1R6DKdeEwwQq7qCXW4_l9Yxj6cd260YzhvAQlDXZHuxg/edit#gid=0" target="external">requirements</a> and validating some of the core technologies that we are planning to integrate into the system, like the <a href="http://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html" target="external">Zynq UltraScale+</a> MPSoC or the <a href="" target="external">XMOS XEF200</a> multicore microcontroller. If we do not hit any major roadblock, we hope to complete a first prototype in 2016, and a small batch the year after.
+                                ISHIZENO i8 is currently under development. We are now in the process of gathering <a href="https://docs.google.com/spreadsheets/d/1R6DKdeEwwQq7qCXW4_l9Yxj6cd260YzhvAQlDXZHuxg/edit#gid=0" target="external">requirements</a> and validating some of the core technologies that we are planning to integrate into the system, like the <a href="http://www.xilinx.com/products/silicon-devices/soc/zynq-ultrascale-mpsoc.html" target="external">Zynq UltraScale+</a> MPSoC or the <a href="" target="external">XMOS XEF200</a> multicore microcontroller. If we do not hit any major roadblock, we hope to complete a first prototype in 2016, and a small production run the year after.
                             </p>
                             <p>
                                 ISHIZENO i8 is designed by <a href="https://www.linkedin.com/in/ghalimi/en" target="external">Ismael Ghalimi</a>, who is neither a musician, nor an electrical engineer. Instead, he applies his expertise with software development and his unadulterated perspective on audio synthesis and sound processing to create something new and radical.
@@ -228,7 +228,7 @@
                                 <div class="service-info">
                                     <h4>Audio Interface</h4>
                                     <p>
-                                        16×16 audio interface with 32-bit sampling at 384 kHz.<br>
+                                        16×20 audio interface with 32-bit sampling at 384 kHz.<br>
                                         Built-in digital mixer and audiophile headphones amplifier.
                                     </p>
                                 </div>
@@ -246,8 +246,8 @@
                                 <div class="service-info">
                                     <h4>64 Channel Oscilloscope</h4>
                                     <p>
+                                        32-bit audio sampling at 384 KHz.<br>
                                         16-bit CV sampling at 200 kSPS.<br>
-                                        Dual 800×480 folding color touchscreens.
                                     </p>
                                 </div>
                             </div>
@@ -268,7 +268,7 @@
                                     <h4>Hybrid Synthesizer</h4>
                                     <p>
                                         16 analog CV inputs and 16 analog CV outputs.<br>
-                                        166 CPU cores, 3,528 FPGA DSP slices.
+                                        22 CPU cores, 3,528 FPGA DSP slices.
                                     </p>
                                 </div>
                             </div>
@@ -307,7 +307,7 @@
                                     <h4>Control Surface</h4>
                                     <p>
                                         9 motorized faders with dual 64-LED RGB bargraphs.<br>
-                                        Shuttle wheel, 8 RGB illuminated knobs, 78 switches.
+                                        Shuttle wheel, 24 RGB illuminated knobs, 78 switches.
                                     </p>
                                 </div>
                             </div>
@@ -420,7 +420,7 @@
                     <div class="col-md-8 col-md-offset-2 margin-btm-30">
                         <div class="text-left">
                             <p>
-                                The ISHIZENO i8 is built in a modular fashion with 15 printed circuit boards: power supply unit, backplane, audio converters, CV converters, headphones amplifier, and user interfaces. Its design is optimized to reduce latency and jitter, while offering unprecedented levels of sound processing power.
+                                The ISHIZENO i8 is built in a modular fashion with 4 customizable printed circuit boards: backplane, audio interface, CV interface, and faceplate. Its design is optimized to reduce latency and jitter, while offering unprecedented levels of sound processing power.
                             </p>
                         </div>
                     </div>
@@ -436,7 +436,7 @@
                                 <div class="work-detail">
                                     <h2>Balanced Design</h2>
                                     <p>
-                                        Each one of the 8 stereo inputs and 9 stereo outputs is driven by its own audio converter, a dedicated set of FPGA I/Os, and a dedicated 8-core <a href="http://www.xmos.com/products/silicon/xcore-200/xu-series" target="external">XUF208</a> microcontroller. The <a href="http://esstech.com/PDF/ES9102C%20PB%20v0.3%20140820.pdf" target="external">ES9102C</a> is used for analog-to-digital conversion, while the <a href="http://esstech.com/PDF/ES9018S%20PB%20v1.7%20140916.pdf" target="external">ES9018</a> is used for digital-to-analog conversion.
+                                        Each one of the 8 stereo inputs and 10 stereo outputs is driven by its own audio converter, and a dedicated set of FPGA I/Os. The <a href="http://esstech.com/PDF/ES9102C%20PB%20v0.3%20140820.pdf" target="external">ES9102C</a> is used for analog-to-digital conversion (+124 dB SNR, –118 dB THD+N), while the <a href="http://esstech.com/PDF/ES9018S%20PB%20v1.7%20140916.pdf" target="external">ES9018</a> is used for digital-to-analog (+133 dB SNR, –120 dB THD+N).
                                     </p>
                                     <p>
                                         Every audio converter is attached to a dedicated set of power regulators mounted on individual boards, with 11 boards used for each ADC converter, and 4 boards for each DAC converter.
@@ -468,10 +468,10 @@
                                 <div class="work-detail">
                                     <h2>Audio Mixing</h2>
                                     <p>
-                                        The faceplate includes 9 motorized faders (100 mm) with dual 64-LED RGB bargraphs (one per mono channel), 8 RGB illuminated knobs with SPST switching, one 40 mm shuttle wheel, and 78 illuminated switches.
+                                        The faceplate includes 9 motorized faders (100 mm) with dual 64-LED RGB bargraphs (one per mono channel), 24 RGB illuminated knobs with SPST switching, one 40 mm shuttle wheel, and 78 illuminated switches.
                                     </p>
                                     <p>
-                                        Mixing is done in the digital domain for the 9 stereophonic audio outputs, and a virtually unlimited number of digital audio channels produced by the 3,528 DSP slices provided by the FPGA, and the 160 CPU cores offered by the XMOS microcontrollers.
+                                        Mixing is done in the digital domain for the 10 stereophonic audio outputs, and a virtually unlimited number of digital audio channels produced by the 3,528 DSP slices provided by the FPGA, and the 22 CPU cores offered by the Zynq device and XMOS microcontroller.
                                     </p>
                                 </div>
                             </div>
@@ -517,7 +517,8 @@
                         <div class="col-md-9">
                             <p>1 × 40 mm shuttle wheel</p>
                             <p>2 × folding touchscreens (16-bit colors, 800 × 480 resolution)</p>
-                            <p>8 × RGB illuminated 24 PPR rotary encoders with SPST switching</p>
+                            <p>24 × rotary encoders with 32 PPR and SPST switching</p>
+                            <p>24 × illumination rings with 32 RGB LEDs</p>
                             <p>9 × 100 mm motorized faders</p>
                             <p>9 × 100 mm dual 64-LED RGB bargraphs</p>
                             <p>78 × illuminated switches</p>
@@ -536,7 +537,6 @@
                             <p>32 × RGB LEDs</p>
                             <p>Automatic CV output calibration</p>
                             <p>Digital-to-analog CV converter temperature control</p>
-                            <p>Mechanical folding button</p>
                         </div>
                         <div class="col-md-12">
                             <hr>
@@ -608,8 +608,8 @@
                             <p class="lead feature">DAC Board</p>
                         </div>
                         <div class="col-md-9">
-                            <p>9 × ES9018 digital-to-analog converters</p>
-                            <p>8 + 1 stereo channels</p>
+                            <p>10 × ES9018 digital-to-analog converters</p>
+                            <p>8 + 2 stereo channels</p>
                             <p>Full 32-bit conversion</p>
                             <p>64-bit accumulator</p>
                             <p>Up to 1.5 MHz sampling rate</p>
@@ -930,7 +930,7 @@
                     </div>
                     <div class="col-md-4 margin-btm-30 text-center">
                         <div class="fact-inner">
-                            <h1><span class="counter">166</span></h1>
+                            <h1><span class="counter">22</span></h1>
                             <h3>CPU Cores</h3>
                         </div>
                     </div>

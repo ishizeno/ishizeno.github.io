@@ -151,7 +151,7 @@
                             <i class="fa fa-github-alt"></i>
                             <h3>Open</h3>
                             <p>
-                                Customize any of the 16 printed circuit boards.<br>
+                                Customize any of its printed circuit boards.<br>
                                 Develop user interfaces as web applications.<br>
                                 Open design hardware, open source software.
                             </p>
@@ -228,7 +228,7 @@
                                 <div class="service-info">
                                     <h4>Audio Interface</h4>
                                     <p>
-                                        16×20 audio interface with 32-bit sampling at 384 kHz.<br>
+                                        16×20 audio interface with 32-bit sampling at 768 kHz.<br>
                                         Built-in digital mixer and audiophile headphones amplifier.
                                     </p>
                                 </div>
@@ -246,7 +246,7 @@
                                 <div class="service-info">
                                     <h4>64 Channel Oscilloscope</h4>
                                     <p>
-                                        32 × 32-bit audio sampling at 384 KHz.<br>
+                                        32 × 32-bit audio sampling at 768 KHz.<br>
                                         32 × 16-bit CV sampling at 200 kSPS.<br>
                                     </p>
                                 </div>
@@ -420,7 +420,7 @@
                     <div class="col-md-8 col-md-offset-2 margin-btm-30">
                         <div class="text-left">
                             <p>
-                                The ISHIZENO i8 is built in a modular fashion with 16 customizable printed circuit boards: backplane, audio ADC, audio DAC, CV interface, channel controllers, headphones amplifier, and power supply. Above all, its design is optimized to reduce latency and jitter, while offering unprecedented levels of signal processing power.
+                                The ISHIZENO i8 is built in a modular fashion with customizable printed circuit boards: backplane, audio ADC, audio DAC, CV interface, channel controllers, headphones amplifier, and power supply. Above all, its design is optimized to reduce latency and jitter, while offering unprecedented levels of signal processing power and extensibility.
                             </p>
                         </div>
                     </div>
@@ -429,14 +429,14 @@
                 <div class="row">
                     <div id="work-slide" class="owl-carousel">
                         <div>
-                            <div class="col-md-5 text-center" style="margin-top: 3em;">
-                                <a href="http://esstech.com/" target="external"><img src="img/ess.png" width="60%"></a>
+                            <div class="col-md-5 text-center" style="margin-top: 1.5em;">
+                                <a href="http://esstech.com/" target="external"><img src="img/adc.gif" width="80%"></a>
                             </div>
                             <div class="col-md-6 margin-btm-30">
                                 <div class="work-detail">
                                     <h2>Balanced Design</h2>
                                     <p>
-                                        Each one of the 8 stereo inputs and 10 stereo outputs is driven by its own audio converter, and a dedicated set of FPGA I/Os. The <a href="http://esstech.com/PDF/ES9102C%20PB%20v0.3%20140820.pdf" target="external">ES9102C</a> is used for analog-to-digital conversion (+124 dB SNR, –118 dB THD+N), while the <a href="http://esstech.com/PDF/ES9018S%20PB%20v1.7%20140916.pdf" target="external">ES9018</a> is used for digital-to-analog (+133 dB SNR, –120 dB THD+N).
+                                        Each one of the 8 stereo inputs and 10 stereo outputs is driven by its own audio converter, and a dedicated set of FPGA I/Os. The <a href="http://www.akm.com/akm/en/product/datasheet1/?partno=AK5397EQ" target="external">AK5397EQ</a> is used for analog-to-digital conversion (32-bit, 768 kHz, +127 dB SNR), while a discrete R-2R sign magnitude DAC is used for digital-to-analog conversion with 32-bit resolution and 3.072 MHz oversampling.
                                     </p>
                                     <p>
                                         Every audio converter is attached to a dedicated set of power regulators mounted on individual boards, with 11 boards used for each ADC converter, and 4 boards for each DAC converter.
@@ -548,18 +548,14 @@
                             <p class="lead feature">Audio Input</p>
                         </div>
                         <div class="col-md-9">
-                            <p>8 × ES9102C analog-to-digital converters</p>
+                            <p>8 × AK5397EQ analog-to-digital converters</p>
                             <p>8 stereo channels</p>
                             <p>Full 32-bit conversion</p>
-                            <p>Native sampling rate up to 384 kHz</p>
-                            <p>+124 dB SNR</p>
-                            <p>–118 dB THD+N</p>
-                            <p>Programmable decimation filter</p>
-                            <p>Programmable 8-band biquad filter</p>
-                            <p>Programmable digital high-pass filter</p>
+                            <p>Native sampling rate up to 768 kHz</p>
+                            <p>+127 dB SNR</p>
+                            <p>–108 dB THD+N</p>
                             <p>Balanced inputs</p>
                             <p>Buffers for line inputs</p>
-                            <p>Digital volume controller</p>
                             <p>88 power supply regulation boards
                         </div>
                         <div class="col-md-12">
@@ -569,19 +565,13 @@
                             <p class="lead feature">Audio Output</p>
                         </div>
                         <div class="col-md-9">
-                            <p>10 × ES9018 digital-to-analog converters</p>
+                            <p>10 × discrete R-2R sign magnitude ladder DAC</p>
                             <p>8 + 2 stereo channels</p>
                             <p>Full 32-bit conversion</p>
-                            <p>64-bit accumulator</p>
-                            <p>Up to 1.5 MHz sampling rate</p>
-                            <p>+133 dB SNR</p>
-                            <p>–120 dB THD+N</p>
+                            <p>3.072 MHz sampling rate</p>
                             <p>Pulsar clock</p>
-                            <p>Time domain jitter eliminator</p>
-                            <p>Integrated DSP functions</p>
-                            <p>Customizable filter characteristics</p>
                             <p>Balanced outputs
-                            <p>36 power supply regulation boards</p>
+                            <p>40 power supply regulation boards</p>
                         </div>
                         <div class="col-md-12">
                             <hr>

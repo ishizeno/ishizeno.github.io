@@ -521,7 +521,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div class="text-left">
                             <p>
-                                The ISHIZENO i8 can create sounds from scratch, or sample up to 8 stereo audio channels. For this purpose, it embeds a studio-grade audio interface made of 8 independent analog-to-digital converters. Each converter is mounted on a 100 × 40 mm <a href="img/audio-adc-pcb.png" target="external">board</a>, making the design fully upgradeable, and allowing different converters to be used in parallel for different channels.
+                                The ISHIZENO i8 can synthesize sounds from scratch, or sample up to 8 stereo audio channels. For this purpose, it embeds a studio-grade audio interface made of 8 independent analog-to-digital converters. Each converter is mounted on a 100 × 40 mm <a href="img/audio-adc-pcb.png" target="external">board</a>, making the design fully upgradeable, and allowing different converters to be used in parallel for different channels.
                             </p>
                             <p>
                                 By default, each audio ADC module is built around the <a href="http://www.akm.com/akm/en/product/datasheet1/?partno=AK5397EQ" target="external">AK5397EQ</a> analog-to-digital converter, which supports 32-bit sampling at 768 kHz, with an ultra-low signal-to-noise ratio of +127 dB. Two balanced audio inputs are fed to the converter through input buffers and four <a href="http://www.ti.com/product/lme49990" target="external">LME49990</a> ultra-low distortion, ultra-low noise operational amplifiers.
@@ -539,7 +539,7 @@
                                 This design enables the FPGA to control all parameters of the converter, in a fully programmable fashion, including 12 types of audio data interface formats, sampling speed, digital high pass filter, overflow detection, mono mode, power down, and reset. Most importantly, the 3,528 DSP slices of the FPGA fabric can be used to implement highly sophisticated filters in the digital domain, with ultra-low latency, 32-bit precision, and 3.072 MHz oversampling or more.
                             </p>
                             <p>
-                                In order to reduce the analog input signal's distortion, the card edge connector can be bypassed by using four SSMB coaxial connectors, which connect the two DB25 8-channel balanced inputs connectors directly to the audio ADC modules. Similarly, jitter can be reduced by using another SSMB coaxial connector to propagate the master clock signal from the backplane's clock distribution section to the module. The 8 SSMB connectors used for clock distribution across 8 audio ADC module have the exact same length in order to reduce jitter from the femto clock.
+                                In order to reduce the analog input signal's distortion, the card edge connector can be bypassed by using four SSMB connectors, which connect the two DB25 8-channel balanced inputs connectors directly to the audio ADC modules. Similarly, jitter can be reduced by using an SSMB coaxial connector to propagate the master clock signal from the backplane's clock distribution section to the module. The 8 SSMB connectors used for clock distribution across 8 audio ADC module have the exact same length in order to reduce jitter from the femto clock.
                             </p>
                         </div>
                     </div>

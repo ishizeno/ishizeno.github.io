@@ -132,7 +132,7 @@
                             <p>
                                 Start with a 16×16 32-bit audio interface.<br>
                                 Add a powerful FPGA-powered synthesizer.<br>
-                                Wrap into an 16-channel control surface.
+                                Wrap into a 16-channel control surface.
                             </p>
                         </div>
                     </div>
@@ -440,7 +440,7 @@
                                         Each one of the 8 stereo inputs and 8 stereo outputs is driven by its own audio converter, and a dedicated set of FPGA I/Os. The <a href="http://www.akm.com/akm/en/product/datasheet1/?partno=AK5397EQ" target="external">AK5397EQ</a> is used for analog-to-digital conversion (32-bit, 768 kHz, +127 dB SNR), while a discrete R-2R sign magnitude DAM is used for digital-to-analog conversion with 32-bit resolution and 3.072 MHz oversampling.
                                     </p>
                                     <p>
-                                        Every audio converter is attached to a dedicated set of power regulators mounted on individual boards, with 11 boards used for each ADC converter, and 4 boards for each DAM modulator.
+                                        Every audio converter is driven by dedicated sets of ultra-low noise linear power regulators, with 8 regulators used for each ADC converter, and 4 regulators for each DAM modulator.
                                     </p>
                                 </div>
                             </div>
@@ -472,7 +472,7 @@
                                         The faceplate includes 9 motorized faders (100 mm) with dual 64-LED RGB bargraphs (one per mono channel), 24 RGB illuminated knobs with SPST switching, one 55 mm shuttle wheel, and 78 illuminated switches.
                                     </p>
                                     <p>
-                                        Mixing is done in the digital domain for the 10 stereophonic audio outputs, and a virtually unlimited number of digital audio channels produced by the 3,528 DSP slices provided by the FPGA, and the 22 CPU cores offered by the Zynq device and XMOS microcontroller.
+                                        Mixing is done in the digital domain for the 8 stereophonic audio outputs, and a virtually unlimited number of digital audio channels produced by the 3,528 DSP slices provided by the FPGA, and the 22 CPU cores offered by the Zynq device and XMOS microcontroller.
                                     </p>
                                 </div>
                             </div>
@@ -498,6 +498,65 @@
                 </div>
             </div>
         </div>
+
+        <!-- ADC Section -->
+        <section id="adc" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center-heading text-center">
+                            <h2>Audio Input</h2>
+                            <span class="icon"><i class="fa fa-plug"></i></span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 margin-btm-30">
+                        <div class="text-center">
+                            <a href="img/audio-adc-schema.png" target="external"><img src="img/audio-adc-schema.png" width="60%"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="text-left">
+                            <p>
+                                The ISHIZENO i8 can create sounds from scratch, or sample up to 8 stereo audio channels. For this purpose, it embeds a studio-grade audio interface made of 8 independent analog-to-digital converters. Each converter is mounted on a 100 × 40 mm <a href="img/audio-adc-pcb.png" target="external">board</a>, making the design fully upgradeable, and allowing different converters to be used in parallel.
+                            </p>
+                            <p>
+                                By default, each audio ADC module is built around the AK5397EQ analog-to-digital converter, which supports 32-bit sampling at 768 kHz, with an ultra-low signal-to-noise ratio of +127 dB. Two balanced audio inputs are fed to the converter through input buffers and four LME49990 ultra-low distortion, ultra-low noise operational amplifiers.
+                            </p>
+                            <p>
+                                In order to preserve the purity and richness of the original signal, each module includes eight power regulators: one LM78L15 for +15 V, one LM79L15 for -15 V, and six ultra-low noise ADM7150 linear regulators (left &amp; right 5 V analog, left &amp; right 5 V bias, left &amp; right 3.3 V digital). Furthermore, each linear regulator is buffered with five to seven capacitors (ceramic and electrolytic), while each operational amplifier is buffered with eight capacitors (ceramic, electrolytic, tantalum). Finally, all resistors are aviation-grade components with an ultra-low tolerance of 0.01% or less.
+                            </p>
+                            <p>
+                                The printed circuit board (PCB) used for each module is made of two layers only, with all analog and digital signals being routed on the top plane. The bottom plane is used for power and grounding, with fully-separated analog and digital sections connected through a star pattern. Traces are never thinner than 0.016 mil, while most analog input and power traces are 0.032 mil, ensuring very low impedance. Additionally, no via is ever used by more than one trace, and all traces are rounded and follow a 45 degrees routing pattern.
+                            </p>
+                            <p>
+                                Each module is connected to the backplane through a 62-position card edge connector with a low impedance pitch of 2.54 mm and a 500 V rating. When using the AK5397EQ analog-to-digital converter, all 19 digital I/Os made available by the converter are routed to the backplane's FPGA through the edge connector, while leaving 6 top-plane positions available for future upgrades, and using all 31 bottom-plane positions for grounding.
+                            </p>
+                            <p>
+                                This design enables the FPGA to control all parameters of the converter, in a fully programmable fashion, including 12 types of audio data interface formats, sampling speed, digital high pass filter, overflow detection, mono mode, power down, and reset. Most importantly, the 3,528 DSP slices of the FPGA fabric can be used to implement highly sophisticated filters in the digital domain, with ultra-low latency, 32-bit precision, and 3.072 MHz oversampling or more.
+                            </p>
+                            <p>
+                                In order to reduce the analog input signal's distortion, the card edge connector can be bypassed by using four SMA coaxial connectors, which connect the two DB25 8-channel balanced inputs connectors directly to the audio ADC modules. Similarly, jitter can be reduced by using another SMA coaxial connector to propagate the master clock signal from the backplane's clock distribution section to the module. The 8 SMA connectors used for clock distribution across 8 audio ADC module have the exact same length in order to reduce jitter from the femto clock.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADC PCB Section -->
+        <section class="parallax adc-pcb bg-heading" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 adc-pcb-area">
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Specifications Section -->
         <section id="specifications" class="section-padding">
@@ -539,8 +598,9 @@
                             <p>597K logic cells</p>
                             <p>3,528 DSP slices</p>
                             <p>XMOS XEF200 multicore microcontroller</p>
-                            <p>16 × real-time processing core</p>
+                            <p>16 × real-time processing cores</p>
                             <p>2,000 MIPS</p>
+                            <p>Pulsar femto clock</p>
                         </div>
                         <div class="col-md-12">
                             <hr>
@@ -557,7 +617,6 @@
                             <p>–108 dB THD+N</p>
                             <p>Balanced inputs</p>
                             <p>Buffers for line inputs</p>
-                            <p>88 power supply regulation boards
                         </div>
                         <div class="col-md-12">
                             <hr>
@@ -570,9 +629,7 @@
                             <p>8 stereo channels</p>
                             <p>32-bit resolution</p>
                             <p>3.072 MHz oversampling rate</p>
-                            <p>Pulsar clock</p>
                             <p>Balanced outputs
-                            <p>40 power supply regulation boards</p>
                         </div>
                         <div class="col-md-12">
                             <hr>

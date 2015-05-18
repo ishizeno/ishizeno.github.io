@@ -1034,7 +1034,7 @@ h3.heading-progress{
 /*  Fun Facts                                                                */
 /*———————————————————————————————————————————————————————————————————————————*/
 .fun-facts{
-    background: url("../img/showcase-5.jpg");
+    background: url("../img/showcase-4.jpg");
     padding: 80px 0;
 }
 .fact-inner h1{
@@ -1222,4 +1222,14 @@ h3.heading-progress{
 /*———————————————————————————————————————————————————————————————————————————*/
 #mce-success-response{
     margin-bottom: 40px;
+}
+
+/*———————————————————————————————————————————————————————————————————————————*/
+/*  ADC                                                                      */
+/*———————————————————————————————————————————————————————————————————————————*/
+.adc-pcb{
+    background: url(../img/audio-adc-pcb.png);
+}
+.adc-pcb-area{
+    margin-bottom: 250px;
 }

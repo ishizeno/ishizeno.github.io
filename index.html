@@ -538,6 +538,9 @@
                             <p>
                                 This design enables the FPGA to control all parameters of the converter, in a fully programmable fashion, including 12 types of audio data interface formats, sampling speed, digital high pass filter, overflow detection, mono mode, power down, and reset. Most importantly, the 3,528 DSP slices of the FPGA fabric can be used to implement highly sophisticated filters in the digital domain, with ultra-low latency, 32-bit precision, and 3.072 MHz oversampling or more.
                             </p>
+                            <p>
+                                In order to reduce jitter from the femto clock to the converter, the master clock signal is not routed from the backplane to the audio ADC modules through their card edge connectors. Instead, 8 coaxial cables of equal length are connected from the backplane's clock distribution section to the 8 modules, using U.FL ultra small surface mount coaxial connectors.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -614,6 +617,7 @@
                             <p>–108 dB THD+N</p>
                             <p>Balanced inputs</p>
                             <p>Buffers for line inputs</p>
+                            <p>U.FL coaxial connector for master clock</p>
                         </div>
                         <div class="col-md-12">
                             <hr>
